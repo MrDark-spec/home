@@ -34,7 +34,7 @@ config = {
 
     
     "redirect": {
-        "redirect": True, 
+        "redirect": False, 
         "page": "https://Xvideos.com" 
     },
 
